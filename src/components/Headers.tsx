@@ -1,3 +1,4 @@
+import MobileNav from "./MobileNav"
 import { Nav } from "./Nav"
 import { Button } from "./ui/button"
 import Link from "next/link"
@@ -20,8 +21,8 @@ export const Headers = () => {
           </Link>
         </div>
         {/* Mobile Nav */}
-        <div className="md:hidden">
-          Mobile view
+        <div className="md:hidden mx-4">
+          <MobileNav />
         </div>
       </div>
     </header>

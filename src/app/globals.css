@@ -84,6 +84,6 @@
     @apply font-primary bg-black text-white leading-loose;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-primary text-foreground;
   }
 }
