@@ -5,11 +5,11 @@ import Link from "next/link"
 
 export const Headers = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 xl:py-12 text-white/80">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-4xl font-semibold">
           Vijay
-          <span className="text-green-600">
+          <span className="text-accent">
             .
           </span>
         </Link>
@@ -17,7 +17,7 @@ export const Headers = () => {
         <div className="hidden md:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
-            <Button>Hire me !</Button>
+            <Button className="text-black/80">Hire me !</Button>
           </Link>
         </div>
         {/* Mobile Nav */}
