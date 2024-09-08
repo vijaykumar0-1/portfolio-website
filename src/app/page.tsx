@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import ProfilePhoto from "@/components/ProfilePhoto";
+import Stats from "@/components/Stats";
 const Home = () => {
   return (
     <section className="h-full">
@@ -11,7 +12,7 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
               Hello I'm <br />
-              <span className="text-green-400">Vijay Kumar Das</span>
+              <span className="text-green-400">Vijay Das</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I excel at crafting elegant digital experiences and I am
@@ -42,6 +43,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Stats/>
     </section>
   );
 };
