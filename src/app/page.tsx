@@ -3,6 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import ProfilePhoto from "@/components/ProfilePhoto";
 import Stats from "@/components/Stats";
+
 const Home = () => {
   return (
     <section className="h-full">
@@ -15,11 +16,17 @@ const Home = () => {
               <span className="text-green-400">Vijay Das</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+            Java developer with over 2 years of experience specializing in full-stack development. Led cross-
+            functional teams of up to 10 members in delivering scalable solutions, resulting in a 60% improvement in
+            application performance. Committed to continuous improvement, staying updated with the latest
+            technologies.
             </p>
             <div className="flex flex-col md:flex-row gap-8 items-center">
               {/* button and social*/}
+              <a 
+              href="resume/Resume.pdf"
+              download="vijay-resume.pdf"
+              >
               <Button
                 variant="outline"
                 size="lg"
@@ -28,6 +35,7 @@ const Home = () => {
                 <span className="">download</span>
                 <FiDownload className="text-xl" />
               </Button>
+              </a>
               <div className="mb-8 md:mb-0">
                 <Social
                   containerStyle="flex gap-6"
