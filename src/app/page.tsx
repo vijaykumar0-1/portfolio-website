@@ -32,7 +32,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2 rounded-full"
               >
-                <span className="">download</span>
+                <span className="">download cv</span>
                 <FiDownload className="text-xl" />
               </Button>
               </a>
