@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import profilePic from "../../public/assets/image.png";
+import profilePic from "../../public/assets/profileImage.png";
 
 const ProfilePhoto = () => {
   return (
