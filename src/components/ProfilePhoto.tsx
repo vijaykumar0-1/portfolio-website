@@ -20,7 +20,7 @@ const ProfilePhoto = () => {
             quality={100}
             fill
             alt="Profile picture"
-            className="object-contain" // Apply mix-blend-mode here
+            className="object-contain"
           />
         </div>
       </motion.div>

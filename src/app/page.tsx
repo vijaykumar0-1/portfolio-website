@@ -13,10 +13,10 @@ const Home = () => {
             <span className="text-xl">Software Developer</span>
             <h1 className="h1">
               Hello I'm <br />
-              <span className="text-green-400">Vijay Das</span>
-            </h1>
+              <span className="text-accent leading-tight">Vijay Das</span>
+            </h1><br/>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Java developer with over 2 years of experience specializing in full-stack development. Led cross-
+            Fullstack developer with over 2 years of experience specializing in Java, Spring boot, React, NextJs, tailwind etc. development. Led cross-
             functional teams of up to 10 members in delivering scalable solutions, resulting in a 60% improvement in
             application performance. Committed to continuous improvement, staying updated with the latest
             technologies.
