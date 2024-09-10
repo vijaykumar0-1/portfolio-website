@@ -40,8 +40,8 @@ const ProfilePhoto = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            cx="280"
-            cy="280" 
+            cx="257"
+            cy="257" 
             r="250"
             stroke="#00ff99"
             strokeWidth="4"
@@ -55,7 +55,7 @@ const ProfilePhoto = () => {
             transition={{
               duration: 80,
               repeat: Infinity,
-              repeatType: "reverse"
+              repeatType: "mirror"
             }}
           />
         </motion.svg>
