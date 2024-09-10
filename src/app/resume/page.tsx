@@ -77,7 +77,7 @@ const education = {
 
 const skills = {
   title: "My skills",
-  description: "description",
+  description: "I am proficient in modern web development technologies, from building responsive layouts with HTML and CSS to developing full-stack applications with JavaScript, React, Node.js, and Next.js. My expertise also includes working with frameworks like Tailwind CSS for efficient styling and delivering high-performance web applications.",
   skillList: [
     {
       icon: <FaHtml5 />,
