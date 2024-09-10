@@ -232,7 +232,7 @@ const Resume = () => {
           <TabsContent value="about" className="w-full text-center lg:text-left">
                 <div className="flex flex-col gap-[30px]">
                   <h3 className="text-4xl font-bold">{about.title}</h3>
-                  <p className="max-w-[600px mx-auto md:mx-0  text-white/60">{about.description}</p>
+                  <p className="text-white/60 mx-auto md:mx-0 max-w-[600px]">{about.description}</p>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 max-w-[620px] mx-auto md:mx-0">
                     {about.info.map((item, index)=>{
                       return<li key={index} className="flex items-center justify-center md:justify-start gap-4 ">
