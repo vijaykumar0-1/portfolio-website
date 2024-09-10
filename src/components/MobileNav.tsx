@@ -5,29 +5,8 @@ import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Links from "./NavLinks";
 
-const Links = [
-  {
-    name: 'home',
-    path: '/'
-  },
-  {
-    name: 'services',
-    path: '/services'
-  },
-  {
-    name: 'resume',
-    path: '/resume'
-  },
-  {
-    name: 'work',
-    path: '/work'
-  },
-  {
-    name: 'contact',
-    path: '/contact'
-  }
-]
 
 const MobileNav = () => {
   const pathname = usePathname();
