@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Fullstack developer with over 2 years of experience specializing in Java, Spring boot, React, NextJs, tailwind etc. development. Led cross- functional teams of up to 10 members in delivering scalable solutions, resulting in a 60% improvement in application performance. Committed to continuous improvement, staying updated with the latest technologies.",
+    "Fullstack developer with over 2 years of experience in building scalable, high-performance web applications. Proficient in Java, Spring Boot, React, Next.js, and Tailwind CSS. I have led cross-functional teams and contributed to significant performance improvements, with a focus on creating efficient, maintainable solutions. I am committed to continuous learning and staying up to date with the latest technologies to enhance my skills and deliver cutting-edge applications. Passionate about solving complex problems and improving both the user and developer experience.",
   info: [
     {
       fieldName: "Name",
@@ -47,7 +47,7 @@ const experience = {
   icon: "",
   title: "My experience",
   description:
-    "Fullstack developer with over 2 years of experience specializing in Java, Spring boot, React, NextJs, tailwind etc. development. Led cross- functional teams of up to 10 members in delivering scalable solutions, resulting in a 60% improvement in application performance. Committed to continuous improvement, staying updated with the latest technologies.",
+    "As a Fullstack developer, I have consistently contributed to the design, development, and maintenance of scalable web applications. My expertise in Java, Spring Boot, and React has enabled me to lead teams and optimize performance across multiple projects. I am experienced in working within collaborative, cross-functional teams, and have successfully led efforts that resulted in a 60% improvement in application performance and reliability.",
   items: [
     {
       Company: "Allstate India Solution pvt. ltd.",
@@ -65,7 +65,7 @@ const experience = {
 const education = {
   icon: "",
   title: "My education",
-  description: "",
+  description: "Graduated with a Bachelor’s degree in Information Technology from Chandigarh University, where I developed a solid foundation in software development, database management, and web technologies. During my time at the university, I gained proficiency in coding, problem-solving, and working on real-world projects, which prepared me for a career in full-stack development.",
   items: [
     {
       Institute: "Chandigarh University, Punjab",
@@ -232,7 +232,7 @@ const Resume = () => {
           <TabsContent value="about" className="w-full text-center lg:text-left">
                 <div className="flex flex-col gap-[30px]">
                   <h3 className="text-4xl font-bold">{about.title}</h3>
-                  <p className="max-w-[600px mx-auto md:mx-0 text-white/60]">{about.description}</p>
+                  <p className="max-w-[600px mx-auto md:mx-0  text-white/60">{about.description}</p>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-6 max-w-[620px] mx-auto md:mx-0">
                     {about.info.map((item, index)=>{
                       return<li key={index} className="flex items-center justify-center md:justify-start gap-4 ">
