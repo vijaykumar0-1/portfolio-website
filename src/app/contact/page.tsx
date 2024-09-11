@@ -52,19 +52,28 @@ const Contact = () => {
     }));
   };
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    setClientData({
-      firstname: '',
-      lastname: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(formEndPoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(clientData).toString(),
+      });
 
-    // Redirect the user to home
-    setTimeout(() => {
-      router.push('/');
-    }, 2000);
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        setTimeout(() => {
+          router.push("/");
+        }, 500);
+      } else {
+        alert("Failed to submit the form. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again.");
+    }
   };
 
   return (
@@ -81,8 +90,7 @@ const Contact = () => {
           <div className="md:w-[50%] order-2 md:order-none flex justify-center">
             {/* form */}
           <form className="flex flex-col gap-6 p-10 bg-[#27272c] w-full max-w-md rounded-lg"
-          action={formEndPoint}
-          method="POST"
+          onSubmit={handleSubmit}
     >
       <h3 className="text-4xl text-accent bg-[#27272c]">Let's work together!</h3>
       {/* input*/}
@@ -133,7 +141,7 @@ const Contact = () => {
       />
 
       {/* submit btn */}
-      <Button size="lg" className="max-w-40 text-black/60" onClick={handleClick}>
+      <Button size="lg" className="max-w-40 text-black/60" type="submit">
         Send message
       </Button>
     </form>
