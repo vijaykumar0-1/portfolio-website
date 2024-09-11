@@ -19,7 +19,7 @@ const stats = [
   },
   {
     plusApplicable: true,
-    num: 12,
+    num: 1100,
     text: "Code commites",
   },
 ];
