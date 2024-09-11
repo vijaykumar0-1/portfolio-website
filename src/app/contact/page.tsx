@@ -121,7 +121,7 @@ const Contact = () => {
           onChange={handleChange} 
         />
         <Input 
-          type="text"
+          type="number"
           placeholder="Phone Number" 
           id="phone" 
           name="phone" 
